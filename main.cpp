@@ -110,7 +110,7 @@ void readData(Graph& g, string filePath) {
         getline(file, notUsed);
         file.get();
 
-        while (!file.eof()) { 
+        while (!file.eof() && i < 200000) { 
             getline(file, id, ',');
             getline(file, name, ',');
             getline(file, notUsed, ',');
