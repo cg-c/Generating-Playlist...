@@ -109,8 +109,9 @@ void readData(Graph& g, string filePath) {
     if (file.is_open()) {
         getline(file, notUsed);
         file.get();
-
-        while (!file.eof() && i < 200000) { 
+        
+        // i is the amount of songs to input, the more songs inputted, the longer it takes to run
+        while (!file.eof() && i < 110000) { 
             getline(file, id, ',');
             getline(file, name, ',');
             getline(file, notUsed, ',');
